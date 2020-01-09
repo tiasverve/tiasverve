@@ -1,2 +1,2 @@
-# tiasverve
-my projects
+файл animation_js:
+открыть файл project.html, остальные файл - это изображения к нему
