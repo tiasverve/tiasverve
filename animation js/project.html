@@ -1,0 +1,760 @@
+<html>
+<head>
+<script>
+
+var i1=1;
+	i2=1;
+	i3=1;
+	i4=1;
+	i5=1;
+	i6=1;
+	
+	a1=0;
+	a2=0;
+	a3=0;
+	a4=0;
+	a5=0;
+	a6=0;
+
+	step1=5;
+	step2=5;
+	step3=5;
+	step4=5;
+	step5=5;
+	step6=5;
+
+function bird_fly1()
+	{
+	bird1.width=bird1.width-i1;
+	bird1.height=bird1.height-i1;
+	i1+=0.1;
+
+	bird1.style.left=200+a1;
+	bird1.style.top=170+a1;
+	a1=a1+step1+10;
+	step1=step1*0.8;
+
+	t1=setTimeout('bird_fly1()',500);
+	if(bird1.height>100){clearTimeout(t1)}
+	}
+	
+function bird_fly2()
+	{
+	bird2.width=bird2.width-i2;
+	bird2.height=bird2.height-i2;
+	i2+=0.1;
+
+	bird2.style.left=250+a2;
+	bird2.style.top=190-a2;
+	a2=a2+step2+10;
+	step2=step2*0.8;
+
+	t1=setTimeout('bird_fly2()',500);
+	if(bird2.height>100){clearTimeout(t1)}
+	}
+	
+function bird_fly3()
+	{
+	bird3.width=bird3.width-i3;
+	bird3.height=bird3.height-i3;
+	i3+=0.01;
+
+	bird3.style.left=300+a3;
+	a3=a3+step3+10;
+	step3=step3*0.8;
+
+	t1=setTimeout('bird_fly3()',500);
+	if(bird3.height>100){clearTimeout(t1)}
+	}
+	
+function bird_fly4()
+	{
+	bird4.width=bird4.width-i4;
+	bird4.height=bird4.height-i4;
+	i4+=0.1;
+
+	bird4.style.left=250+a4;
+	a4=a4+step4+10;
+	step4=step4*0.8;
+
+	t1=setTimeout('bird_fly4()',500);
+	if(bird4.height>100){clearTimeout(t1)}
+	}
+	
+function bird_fly5()
+	{
+	bird5.width=bird5.width-i5;
+	bird5.height=bird5.height-i5;
+	i5+=0.1;
+
+	bird5.style.left=87+a5;
+	bird5.style.top=180+a5;
+	a5=a5+step5+10;
+	step5=step5*0.8;
+
+	t1=setTimeout('bird_fly5()',500);
+	if(bird5.height>100){clearTimeout(t1)}
+	}
+
+
+function bird_fly6()
+	{
+	bird6.width=bird6.width-i6;
+	bird6.height=bird6.height-i6;
+	i6+=0.1;
+
+	t1=setTimeout('bird_fly6()',500);
+	if(bird6.height>100){clearTimeout(t1)}
+	}
+
+function general_movement()
+	{
+	bird_fly1();
+	bird_fly2();
+	bird_fly3();
+	bird_fly4();
+	bird_fly5();
+	bird_fly6();
+	}
+	
+</script>
+
+<style type="text/css">	
+.bell1:hover
+	{
+		animation: ring1 10s ease infinite;
+		transform-origin: 50% 2px;
+	}
+	@keyframes ring1
+	{
+	 0% { transform: rotate(0); }
+	 10%, 50% { transform: rotate(4deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(4deg); }
+	 40% { transform: rotate(-4deg); }
+	 50% { transform: rotate(3deg); }
+	 60% { transform: rotate(-3deg); }
+	 70% { transform: rotate(2deg); }
+	 80% { transform: rotate(-1deg); }
+	 90% { transform: rotate(1deg); }
+	 100% { transform: rotate(0); }
+	}
+	
+img.tip1:hover
+	{
+		animation: tip11 10s ease infinite;
+		transform-origin: 50% -10px;
+	}
+	@keyframes tip11
+	{
+	 0% { transform: translate(-10px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+	
+img.bell2:hover
+{
+	animation: ring2 20s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring2 
+{
+	 0% { transform: rotate(0); }
+	 10%, 50% { transform: rotate(4deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(4deg); }
+	 40% { transform: rotate(-4deg); }
+	 50% { transform: rotate(3deg); }
+	 60% { transform: rotate(-3deg); }
+	 70% { transform: rotate(2deg); }
+	 80% { transform: rotate(-1deg); }
+	 90% { transform: rotate(1deg); }
+	 100% { transform: rotate(0); }
+}
+img.tip2:hover
+	{
+		animation: tip22 20s ease infinite;
+		transform-origin: 50% -10px;
+	}
+	@keyframes tip22
+	{
+	 0% { transform: translate(-10px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+	
+img.bell3:hover
+{
+	animation: ring3 20s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring3 
+{
+  0% { transform: rotate(0); }
+	 10%, 50% { transform: rotate(4deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(4deg); }
+	 40% { transform: rotate(-4deg); }
+	 50% { transform: rotate(3deg); }
+	 60% { transform: rotate(-3deg); }
+	 70% { transform: rotate(2deg); }
+	 80% { transform: rotate(-1deg); }
+	 90% { transform: rotate(1deg); }
+	 100% { transform: rotate(0); }
+}
+img.tip3:hover
+	{
+		animation: tip33 20s ease infinite;
+		transform-origin: 50% -10px;
+	}
+	@keyframes tip33
+	{
+	 0% { transform: translate(-10px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+img.bell4:hover
+{
+	animation: ring4 20s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring4 
+{
+0% { transform: rotate(0); }
+	 1%, 9% { transform: rotate(20deg); }
+	 3% { transform: rotate(-14deg); }
+	 5% { transform: rotate(22deg); }
+	 7% { transform: rotate(-16deg); }
+	 9% { transform: rotate(15deg); }
+	 11% { transform: rotate(-14deg); }
+	 13% { transform: rotate(13deg); }
+	 15% { transform: rotate(-12deg); }
+	 17% { transform: rotate(11deg); }
+	 19% { transform: rotate(-10deg); }
+	 21% { transform: rotate(9deg); }
+	 23% { transform: rotate(-8deg); }
+	 25% { transform: rotate(7deg); }
+	 27% { transform: rotate(-6deg); }
+	 29% { transform: rotate(5deg); }
+	 31% { transform: rotate(-4deg); }
+	 33% { transform: rotate(3deg); }
+	 35% { transform: rotate(-2deg); }
+	 37% { transform: rotate(1deg); }
+	 39% { transform: rotate(-1deg); }
+	 41% { transform: rotate(0); }
+	 100% { transform: rotate(0); }
+}
+img.tip4:hover
+	{
+		animation: tip44 20s ease infinite;
+		transform-origin: 50% -10px;
+	}
+	@keyframes tip44
+	{
+	 0% { transform: translate(-15px, 5px); }
+	 1%, 9% { transform: translate(16px, 5px); }
+	 3% { transform: translate(-16px, 5px); }
+	 5% {transform: translate(15px, 5px); }
+	 7% { transform: translate(-14px, 5px); }
+	 9% { transform: translate(13px, 4px); }
+	 11% {transform: translate(-12px, 4px); }
+	 13% { transform: translate(11px, 4px); }
+	 15% { transform: translate(-10px, 3px); }
+	 17% {transform: translate(9px, 3px); }
+	 19% { transform: translate(-8px, 3px); }
+	 21% { transform: translate(7px, 3px); }
+	 23% { transform: translate(-6px, 2px); }
+	 25% { transform: translate(5px, 2px); }
+	 27% { transform: translate(-4px, 2px); }
+	 29% { transform: translate(3px, 1px); }
+	 31% { transform: translate(-2px, 1px); }
+	 33% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+img.bell5:hover
+{
+	animation: ring5 20s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring5 
+{
+ 0% { transform: rotate(0); }
+	 1%, 9% { transform: rotate(20deg); }
+	 3% { transform: rotate(-14deg); }
+	 5% { transform: rotate(22deg); }
+	 7% { transform: rotate(-16deg); }
+	 9% { transform: rotate(15deg); }
+	 11% { transform: rotate(-14deg); }
+	 13% { transform: rotate(13deg); }
+	 15% { transform: rotate(-12deg); }
+	 17% { transform: rotate(11deg); }
+	 19% { transform: rotate(-10deg); }
+	 21% { transform: rotate(9deg); }
+	 23% { transform: rotate(-8deg); }
+	 25% { transform: rotate(7deg); }
+	 27% { transform: rotate(-6deg); }
+	 29% { transform: rotate(5deg); }
+	 31% { transform: rotate(-4deg); }
+	 33% { transform: rotate(3deg); }
+	 35% { transform: rotate(-2deg); }
+	 37% { transform: rotate(1deg); }
+	 39% { transform: rotate(-1deg); }
+	 41% { transform: rotate(0); }
+	 100% { transform: rotate(0); }
+}
+img.tip5:hover
+	{
+		animation: tip55 20s ease infinite;
+		transform-origin: 50% -10px;
+	}
+	@keyframes tip55
+	{
+	 0% { transform: translate(-15px, 5px); }
+	 1%, 9% { transform: translate(16px, 5px); }
+	 3% { transform: translate(-16px, 5px); }
+	 5% {transform: translate(15px, 5px); }
+	 7% { transform: translate(-14px, 5px); }
+	 9% { transform: translate(13px, 4px); }
+	 11% {transform: translate(-12px, 4px); }
+	 13% { transform: translate(11px, 4px); }
+	 15% { transform: translate(-10px, 3px); }
+	 17% {transform: translate(9px, 3px); }
+	 19% { transform: translate(-8px, 3px); }
+	 21% { transform: translate(7px, 3px); }
+	 23% { transform: translate(-6px, 2px); }
+	 25% { transform: translate(5px, 2px); }
+	 27% { transform: translate(-4px, 2px); }
+	 29% { transform: translate(3px, 1px); }
+	 31% { transform: translate(-2px, 1px); }
+	 33% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+	
+img.bell6:hover
+{
+	animation: ring6 10s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring6 
+{
+	 0% { transform: rotate(0); }
+	 10%, 50% { transform: rotate(4deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(4deg); }
+	 40% { transform: rotate(-4deg); }
+	 50% { transform: rotate(3deg); }
+	 60% { transform: rotate(-3deg); }
+	 70% { transform: rotate(2deg); }
+	 80% { transform: rotate(-1deg); }
+	 90% { transform: rotate(1deg); }
+	 100% { transform: rotate(0); }
+}
+img.tip6:hover
+	{
+		animation: tip66 10s ease;
+		transform-origin: 50% -10px;
+	}
+	@keyframes tip66
+	{
+	 0% { transform: translate(-10px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+
+</style>
+	
+<style type="text/css">	
+.bell1
+	{
+		animation: ring1 10s 0s ease infinite;
+		transform-origin: 50% 2px;
+	}
+	@keyframes ring1
+	{
+	 0% { transform: rotate(0); }
+	 10%, 50% { transform: rotate(4deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(4deg); }
+	 40% { transform: rotate(-4deg); }
+	 50% { transform: rotate(3deg); }
+	 60% { transform: rotate(-3deg); }
+	 70% { transform: rotate(2deg); }
+	 80% { transform: rotate(-1deg); }
+	 90% { transform: rotate(1deg); }
+	 100% { transform: rotate(0); }
+	}
+	
+img.tip1
+	{
+		animation: tip11 10s 0s ease infinite;
+		transform-origin: 50% -10px;
+	}
+	@keyframes tip11
+	{
+	 0% { transform: translate(-10px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+	
+img.bell2
+{
+	animation: ring2 20s 1s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring2 
+{
+	 0% { transform: rotate(0); }
+	 10%, 50% { transform: rotate(4deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(4deg); }
+	 40% { transform: rotate(-4deg); }
+	 50% { transform: rotate(3deg); }
+	 60% { transform: rotate(-3deg); }
+	 70% { transform: rotate(2deg); }
+	 80% { transform: rotate(-1deg); }
+	 90% { transform: rotate(1deg); }
+	 100% { transform: rotate(0); }
+}
+img.tip2
+	{
+		animation: tip22 20s 1s ease infinite;
+		transform-origin: 50% 0px;
+	}
+	@keyframes tip22
+	{
+	 0% { transform: translate(-10px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+	
+img.bell3
+{
+	animation: ring3 20s 6s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring3 
+{
+  0% { transform: rotate(0); }
+	 10%, 50% { transform: rotate(4deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(4deg); }
+	 40% { transform: rotate(-4deg); }
+	 50% { transform: rotate(3deg); }
+	 60% { transform: rotate(-3deg); }
+	 70% { transform: rotate(2deg); }
+	 80% { transform: rotate(-1deg); }
+	 90% { transform: rotate(1deg); }
+	 100% { transform: rotate(0); }
+}
+img.tip3
+	{
+		animation: tip33 20s 6s ease infinite;
+		transform-origin: 50% 0px;
+	}
+	@keyframes tip33
+	{
+	 0% { transform: translate(-10px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+img.bell4
+{
+	animation: ring4 20s 5.5s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring4 
+{
+0% { transform: rotate(0); }
+	 1%, 9% { transform: rotate(20deg); }
+	 3% { transform: rotate(-14deg); }
+	 5% { transform: rotate(22deg); }
+	 7% { transform: rotate(-16deg); }
+	 9% { transform: rotate(15deg); }
+	 11% { transform: rotate(-14deg); }
+	 13% { transform: rotate(13deg); }
+	 15% { transform: rotate(-12deg); }
+	 17% { transform: rotate(11deg); }
+	 19% { transform: rotate(-10deg); }
+	 21% { transform: rotate(9deg); }
+	 23% { transform: rotate(-8deg); }
+	 25% { transform: rotate(7deg); }
+	 27% { transform: rotate(-6deg); }
+	 29% { transform: rotate(5deg); }
+	 31% { transform: rotate(-4deg); }
+	 33% { transform: rotate(3deg); }
+	 35% { transform: rotate(-2deg); }
+	 37% { transform: rotate(1deg); }
+	 39% { transform: rotate(-1deg); }
+	 41% { transform: rotate(0); }
+	 100% { transform: rotate(0); }
+}
+img.tip4
+	{
+		animation: tip44 20s 5.5s ease infinite;
+		transform-origin: 50% 0px;
+	}
+	@keyframes tip44
+	{
+	 0% { transform: translate(-5px, 3px); }
+	 1%, 9% { transform: translate(5px, 3px); }
+	 3% { transform: translate(-4px, 3px); }
+	 5% {transform: translate(4px, 3px); }
+	 7% { transform: translate(-4px, 3px); }
+	 9% { transform: translate(4px, 2px); }
+	 11% {transform: translate(-4px, 2px); }
+	 13% { transform: translate(4px, 2px); }
+	 15% { transform: translate(-5px, 2px); }
+	 17% {transform: translate(5px, 2px); }
+	 19% { transform: translate(-5px, 2px); }
+	 21% { transform: translate(5px, 2px); }
+	 23% { transform: translate(-5px, 2px); }
+	 25% { transform: translate(5px, 2px); }
+	 27% { transform: translate(-4px, 2px); }
+	 29% { transform: translate(3px, 1px); }
+	 31% { transform: translate(-2px, 1px); }
+	 33% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+img.bell5
+{
+	animation: ring5 20s 5s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring5 
+{
+ 0% { transform: rotate(0); }
+	 1%, 9% { transform: rotate(20deg); }
+	 3% { transform: rotate(-14deg); }
+	 5% { transform: rotate(22deg); }
+	 7% { transform: rotate(-16deg); }
+	 9% { transform: rotate(15deg); }
+	 11% { transform: rotate(-14deg); }
+	 13% { transform: rotate(13deg); }
+	 15% { transform: rotate(-12deg); }
+	 17% { transform: rotate(11deg); }
+	 19% { transform: rotate(-10deg); }
+	 21% { transform: rotate(9deg); }
+	 23% { transform: rotate(-8deg); }
+	 25% { transform: rotate(7deg); }
+	 27% { transform: rotate(-6deg); }
+	 29% { transform: rotate(5deg); }
+	 31% { transform: rotate(-4deg); }
+	 33% { transform: rotate(3deg); }
+	 35% { transform: rotate(-2deg); }
+	 37% { transform: rotate(1deg); }
+	 39% { transform: rotate(-1deg); }
+	 41% { transform: rotate(0); }
+	 100% { transform: rotate(0); }
+}
+img.tip5
+	{
+		animation: tip55 20s 5s ease infinite;
+		transform-origin: 50% 0px;
+	}
+	@keyframes tip55
+	{
+	 0% { transform: translate(-5px, 3px); }
+	 1%, 9% { transform: translate(5px, 3px); }
+	 3% { transform: translate(-5px, 3px); }
+	 5% {transform: translate(5px, 3px); }
+	 7% { transform: translate(-5px, 3px); }
+	 9% { transform: translate(5px, 2px); }
+	 11% {transform: translate(-5px, 2px); }
+	 13% { transform: translate(5px, 2px); }
+	 15% { transform: translate(-5px, 2px); }
+	 17% {transform: translate(5px, 2px); }
+	 19% { transform: translate(-5px, 2px); }
+	 21% { transform: translate(5px, 2px); }
+	 23% { transform: translate(-5px, 2px); }
+	 25% { transform: translate(5px, 2px); }
+	 27% { transform: translate(-4px, 2px); }
+	 29% { transform: translate(3px, 1px); }
+	 31% { transform: translate(-2px, 1px); }
+	 33% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+	
+img.bell6
+{
+	animation: ring6 10s ease infinite;
+	transform-origin: 50% 2px;
+}
+@keyframes ring6 
+{
+	 0% { transform: rotate(0); }
+	 10%, 50% { transform: rotate(4deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(4deg); }
+	 40% { transform: rotate(-4deg); }
+	 50% { transform: rotate(3deg); }
+	 60% { transform: rotate(-3deg); }
+	 70% { transform: rotate(2deg); }
+	 80% { transform: rotate(-1deg); }
+	 90% { transform: rotate(1deg); }
+	 100% { transform: rotate(0); }
+}
+img.tip6
+	{
+		animation: tip66 10s ease infinite;
+		transform-origin: 50% 0px;
+	}
+	@keyframes tip66
+	{
+	 0% { transform: translate(-10px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+	}
+
+.filter { 
+  animation: name1 20s infinite;
+}
+
+@keyframes name1 {
+  0%{
+    filter: brightness(40%);
+  }
+  5% {
+    filter: brightness(50%);
+  }
+  10% {
+    filter: brightness(60%);
+  }
+  15% {
+    filter: brightness(70%);
+  }
+  20%{
+    filter: brightness(80%);
+  }
+  30% {
+    filter: brightness(85%);
+  }
+  40% {
+    filter: brightness(90%);
+  }
+  50% {
+    filter: brightness(95%);
+  }
+  60% {
+    filter: brightness(100%);
+  }
+  65% {
+    filter: brightness(100%);
+  }
+  70% {
+    filter: brightness(100%);
+  }
+  75% {
+    filter: brightness(90%);
+  }
+  85% {
+    filter: brightness(80%);
+  }
+  90% {
+    filter: brightness(70%);
+  }
+  95% {
+    filter: brightness(60%);
+  }
+  100% {
+    filter: brightness(40%);
+  }
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<img id='im1' src="ground.jpg" width="1000" height="804" style="position:absolute; z-Index:0">
+
+<img border="0" height="167" width="190" src="bell1.PNG" style="position:absolute; z-Index:2; top:212; left:80" class="bell1"/>
+<img border="0" height="33" width="48" src="tip1.PNG" style="position:absolute; z-Index:1; top:370; left:157" class="tip1"/>
+
+<img border="0" height="130" width="150" src="bell2.PNG" style="position:absolute; z-Index:2; top:250; left:275" class="bell2"/>
+<img border="0" height="23" width="18" src="tip2.PNG" style="position:absolute; z-Index:1; top:372; left:325" class="tip2"/>
+
+<img border="0" height="100" width="90" src="bell3.PNG" style="position:absolute; z-Index:2; top:250; left:575" class="bell3"/>
+<img border="0" height="19" width="16" src="tip3.PNG" style="position:absolute; z-Index:1; top:338; left:609" class="tip3"/>
+
+<img border="0" height="51" width="59" src="bell4.PNG" style="position:absolute; z-Index:2; top:265; left:680" class="bell4"/>
+<img border="0" height="12" width="12" src="tip4.PNG" style="position:absolute; z-Index:1; top:308; left:706" class="tip4"/>
+
+<img border="0" height="40" width="48" src="bell5.PNG" style="position:absolute; z-Index:2; top:260; left:723" class="bell5"/>
+<img border="0" height="8" width="8" src="tip5.PNG" style="position:absolute; z-Index:1; top:295; left:741" class="tip5"/>
+
+<img border="0" height="74" width="93" src="bell6.PNG" style="position:absolute; z-Index:2; top:265; left:790" class="bell6"/>
+<img border="0" height="12" width="7" src="tip6.PNG" style="position:absolute; z-Index:1; top:330; left:829" class="tip6"/>
+
+
+<img id='bird1' src="volando.GIF" width="40" height="40" onclick="bird_fly1()" style="position:absolute; z-Index:1; top:170; left:200" title={1}>
+<img id='bird2' src="volando.GIF" width="40" height="40" onclick="bird_fly2()" style="position:absolute; z-Index:1; top:190; left:250" title={2}>
+<img id='bird3' src="volando.GIF" width="40" height="40" onclick="bird_fly3()" style="position:absolute; z-Index:1; top:210; left:300" title={3}>
+<img id='bird4' src="volando.GIF" width="40" height="40" onclick="bird_fly4()" style="position:absolute; z-Index:1; top:230; left:250" title={4}>
+<img id='bird5' src="volando.GIF" width="40" height="40" onclick="bird_fly5()" style="position:absolute; z-Index:1; top:180; left:87" title={5}>
+<img id='bird6' src="hawk.GIF" width="47" height="47" onclick="bird_fly6()" style="position:absolute; z-Index:1; top:55; left:710" title={1}>
+
+<img id='monk' src="monk.PNG" width="162" height="390" onclick="general_movement()" style="position:absolute; z-Index:4; top:295; left:717">
+
+<audio autoplay loop>
+	<source src="audio_bells.mp3">
+</audio>
+
+<div class="filter"> 
+    <span class="filter"></span> 
+    <img src="sky1.PNG" width="265" height="391" style="position:absolute; z-Index:-2; top:27; left:73"> 
+	<img src="sky2.PNG" width="322" height="390" style="position:absolute; z-Index:-2; top:27; left:555"> 
+</div>
+
+</body>
+
+</html>
