@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+	<script src="draggablescript.js"></script>
+
+<style type="text/css">	
+img.wing1
+	{
+		animation: wing1 4s ease infinite;
+		transform-origin: right 90%;
+	}
+	@keyframes wing1
+	{0% { transform: rotate(-10deg); }
+	 10% { transform: rotate(10deg); }
+	 20% { transform: rotate(-10deg); }
+	 30% { transform: rotate(10deg); }
+	 40% { transform: rotate(-10deg); }
+	 50% { transform: rotate(10deg); }
+	 60% { transform: rotate(-10deg); }
+	 70% { transform: rotate(10deg); }
+	 80% { transform: rotate(-10deg); }
+	 90% { transform: rotate(10deg); }
+	 100% { transform: rotate(-10deg); }
+	}	
+img.wing2
+	{
+		animation: wing2 4s ease infinite;
+		transform-origin: left 90%;
+	}
+	@keyframes wing2
+	{0% { transform: rotate(15deg); }
+	 10% { transform: rotate(-15deg); }
+	 20% { transform: rotate(15deg); }
+	 30% { transform: rotate(-15deg); }
+	 40% { transform: rotate(15deg); }
+	 50% { transform: rotate(-15deg); }
+	 60% { transform: rotate(15deg); }
+	 70% { transform: rotate(-15deg); }
+	 80% { transform: rotate(15deg); }
+	 90% { transform: rotate(-15deg); }
+	 100% { transform: rotate(15deg); }
+	}	
+img.head1
+	{
+		animation: head 5s ease infinite;
+		transform-origin: 50% bottom;
+	}
+	@keyframes head
+	{0% { transform: rotate(5deg); }
+	 10% { transform: rotate(-5deg); }
+	 20% { transform: rotate(5deg); }
+	 30% { transform: rotate(-5deg); }
+	 40% { transform: rotate(5deg); }
+	 50% { transform: rotate(-5deg); }
+	 60% { transform: rotate(5deg); }
+	 70% { transform: rotate(-5deg); }
+	 80% { transform: rotate(5deg); }
+	 90% { transform: rotate(-5deg); }
+	 100% { transform: rotate(5deg); }
+	}
+</style>
+
+<style>
+#makeMeDraggable { }
+</style>
+</head>
+
+
+<body style="cursor: auto; ">
+
+<div style="position:absolute; z-Index:0;  top:50%; left:50%; margin-left:-500px; margin-top:-334px; width:1000; height:669">
+
+<div style="position:absolute; z-Index:2;  top:0; left:7; width:1000; height:700">
+<marquee direction=down height=625; style="z-Index:4;">
+<img src="text1.png" style="z-Index:4;  top:0; left:7">
+</marquee>
+</div>
+
+<div style="position:absolute; z-Index:2;  top:8; left:0; width:1000; height:700">
+<marquee direction=left scrollamount=3; style="z-Index:4;">
+<img src="text2.png" style="z-Index:4;  top:8; left:0">
+</marquee>
+</div>
+
+<div style="position:absolute; z-Index:2;  top:0; left:962; width:1000; height:700">
+<marquee direction=up height=625; scrollamount=3; style="z-Index:4;">
+<img src="text3.png" style="z-Index:4;  top:0; left:962">
+</marquee>
+</div>
+
+<div style="position:absolute; z-Index:2;  top:629; left:0; width:1000; height:700">
+<marquee direction=right scrollamount=3; style="z-Index:4;">
+<img src="text4.png" style="z-Index:4;  top:629; left:0">
+</marquee>
+</div>
+
+
+<img id='im1' src="background.jpg" style="position:absolute; z-Index:0;  top:0; left:0">
+<img id='im3' src="wing1.png" style="position:absolute; z-Index:1;  top:92; left:668" class="wing1">
+<img id="im2" src="wing2.PNG" style="position:absolute; z-Index:1; top:48; left:790" class="wing2">
+<img src="head1.png" style="position:absolute; z-Index:1; top:144; left:239" class="head1">
+<img src="h2.png" style="position: absolute; top:410; left:450" >
+<img src="h3.png" style="position: absolute; top:445; left:530" >
+<img src="h4.png" style="position: absolute; top:420; left:615" >
+<img src="h5.png" style="position: absolute; top:260; left:690" >
+<img src="h6.png" style="position: absolute; top:530; left:710" >
+
+</div>
+
+<a href="../ill4/ill4.html">
+<img src="st.png" style="position:relative; top:530; left:979; width:100; height:65">
+</a>
+
+<a href="../ill2/ill2.html">
+<img src="st2.png" style="position:relative; top:530; left:155; width:100; height:65">
+</a>
+
+<div style='height: 622px; width:1200'>
+<img src="h1.png" style="position: relative; top:455; left:553" id="makeMeDraggable" >
+</div>
+
+<audio autoplay loop>
+	<source src="wing_sound.mp3">
+</audio>
+</body>
+
+</html>

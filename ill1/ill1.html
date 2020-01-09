@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+	<script src="draggablescript.js"></script>
+
+<script>
+$( document ).click(function() {
+	$( "#im2" ).effect( "bounce", {times:7, distance:20, direction:"left"});
+	$( "#im2" ).effect( "bounce", {times:7, distance:20, direction:"left"});
+    $( "#im2" ).effect( "bounce", {times:7, distance:20, direction:"left"});
+});
+</script>
+ 
+<script>
+$( document ).click(function() {
+	$( "#im3" ).effect( "bounce", {times:10, distance:20, direction:"up"});
+    $( "#im3" ).effect( "bounce", {times:10, distance:20, direction:"up"});
+	$( "#im3" ).effect( "bounce", {times:10, distance:20, direction:"up"});
+});
+</script>
+
+	
+<style type="text/css">	
+	
+img.pipe
+	{
+		animation: text 15s ease infinite;
+		transform-origin: 50% -10px;
+	}
+	@keyframes text
+	{
+	 0% { transform: translateX(-5px); }
+	 10% { transform: translateX(5px); }
+	 12% { transform: translateX(-4px); }
+	 14% {transform: translateX(4px); }
+	 16% { transform: translateX(-4px); }
+	 20% { transform: translateX(4px); }
+	 24% {transform: translateX(-4px); }
+	 28% { transform: translateX(4px); }
+	 32% { transform: translateX(-5px); }
+	 34% {transform: translateX(5px); }
+	 36% { transform: translateX(-5px); }
+	 38% { transform: translateX(5px); }
+	 40% { transform: translateX(-5px); }
+	 42% { transform: translateX(5px); }
+	 44% { transform: translateX(-4px); }
+	 46% { transform: translateX(5px); }
+	 48% { transform: translateX(-4px); }
+	 50% { transform: translateX(5px); }
+	 52% {transform: translateX(-5px); }
+	 54% { transform: translateX(5px); }
+	 56% { transform: translateX(-5px); }
+	 58% { transform: translateX(5px); }
+	 60% { transform: translateX(-5px); }
+	 62% { transform: translateX(5px); }
+	 64% { transform: translateX(-4px); }
+	 66% { transform: translateX(5px); }
+	 68% { transform: translateX(-4px); }
+	 70% { transform: translateX(5px); }
+	 80% {transform: translateX(-5px); }
+	 85% { transform: translateX(5px); }
+	 90% { transform: translateX(-5px); }
+	 100% { transform: translateX(0px); }
+	}
+</style>
+
+<style>
+#makeMeDraggable { opacity: 1.0 }
+#makeMeDraggable.ui-draggable-dragging { opacity: 0.1 }
+</style>
+</head>
+
+
+<body>
+<div style="position:absolute; z-Index:0;  top:50%; left:50%; margin-left:-500px; margin-top:-334px; width:1000; height:669">
+
+<div style="position:absolute; z-Index:2;  top:25; left:478; width:1000; height:700">
+<marquee direction=down height=584; scrollamount=3; style="z-Index:4;">
+<img src="book_name.png" style="z-Index:4;">
+</marquee>
+</div>
+
+<img id='im1' src="background.jpg" onclick="f1()" style="position:absolute; z-Index:0;  top:0; left:0">
+<img id='im3' src="letter.png" style="position:absolute; z-Index:1;  top:379; left:552">
+<img id="im2" src="key.PNG" style="position:absolute; z-Index:1; top:428; left:585">
+<img border="0" src="pipe.png" style="position:absolute; z-Index:2; top:315; left:254" class="pipe">
+
+</div>
+
+<div style='height: 622px; width: 991'>
+<img src="cat_head.png" style="position: relative; top:49; left:801" id="makeMeDraggable" >
+</div>
+
+<a href="../ill2/ill2.html">
+<img src="st.png" style="position:relative; top:-120; left:999; width:100; height:65">
+</a>
+
+<audio autoplay loop>
+	<source src="pipe.mp3">
+</audio>
+
+
+</body>
+
+</html>

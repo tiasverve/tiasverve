@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+<script>
+$( document ).click(function() {
+	$( "#im22" ).effect( "bounce", {times:7, distance:5, direction:"left"});
+	$( "#im22" ).effect( "bounce", {times:7, distance:10, direction:"left"});
+    $( "#im22" ).effect( "bounce", {times:7, distance:2, direction:"left"});
+});
+
+$( document ).click(function() {
+	$( "#im33" ).effect( "bounce", {times:10, distance:10, direction:"up"});
+    $( "#im33" ).effect( "bounce", {times:10, distance:20, direction:"up"});
+	$( "#im33" ).effect( "bounce", {times:10, distance:10, direction:"up"});
+});
+</script>
+	
+<style type="text/css">
+img.alisa
+{
+ opacity: 1.0;
+ animation: move 10s ease-in-out infinite;
+ transform-origin: 10% 4px;
+}
+@keyframes move {
+	 0% { transform: translate(-1px, 4px); }
+	 10% { transform: translate(10px, 4px); }
+	 20% { transform: translate(-7px, 3px); }
+	 30% { transform: translate(5px, 2px); }
+	 40% { transform: translate(-4px, 2px); }
+	 50% { transform: translate(3px, 1px); }
+	 60% { transform: translate(-2px, 1px); }
+	 70% { transform: translate(1px, 0px); }
+	 100% { transform: translate(0px, 0px); }
+}
+</style>
+</head>
+
+<body>
+
+<div style="position:absolute; z-Index:0;  top:50%; left:50%; margin-left:-500px; margin-top:-337px; width:1000; height:675">
+
+<div style="position:absolute; z-Index:2;  top:7; left:0; width:1000; height:700">
+<marquee direction=left scrollamount=3; style=" z-Index:4;">
+<img id='im6' src="text1.jpg" style="z-Index:4;  top:7; left:0">
+</marquee>
+</div>
+
+<div style="position:absolute; z-Index:2;  top:637; left:0; width:1000; height:700">
+<marquee direction=left scrollamount=3; style=" z-Index:4;">
+<img id='im7' src="text2.jpg" style="z-Index:4;  top:637; left:0">
+</marquee>
+</div>
+
+<img id='im1' src="background1.jpg" onclick="f1()" >
+<img id='im22' src="crown.png" style="position:absolute; z-Index:1;  top:124; left:242">
+<img id="im33" src="head.PNG" style="position:absolute; z-Index:1; top:55; left:680">
+<img src="alisa.png" style="position:absolute; z-Index:2; top:255; left:50" class="alisa">
+
+</div>
+<a href="../ill3/ill3.html">
+<img src="st.png" style="position:relative; top:545; left:979; width:100; height:65">
+</a>
+
+<a href="../ill1/ill1.html">
+<img src="st2.png" style="position:relative; top:545; left:121; width:100; height:65">
+</a>
+
+</body>
+
+</html>
